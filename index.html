@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hestia</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top px-md-5 py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-semibold" href="#">Hestia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#functions">Funciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <form class="d-flex gap-2 flex-column flex-md-row align-items-stretch" role="search">
+            <button class="btn btn-outline-secondary " type="submit">
+              Registrarse
+            </button>
+            <button class="btn btn-primary" type="submit">
+              Iniciar Sesión
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-4" id="home">
+      <div class="row align-items-center">
+        <div class="col-md-7 align-items-center text-center">
+            <img
+            class="img-fluid d-block d-md-none mb-3"
+            src="assets/home-settings.svg"
+            alt="Home Image"
+          />
+          <h1 class="fs-1">Hestia</h1>
+          <p>Haz Privada tu Privada</p>
+          <form class="d-flex flex-md-row flex-column justify-content-center">
+            <input
+              type="email"
+              class="form-control me-2"
+              placeholder="Correo Electrónico"
+            />
+            <button class="btn btn-primary d-flex align-items-center mt-md-0 mt-2">
+              Contactanos
+              <i class="bx bx-chevron-right"></i>
+            </button>
+          </form>
+        </div>
+        <div class="col-5 mt-2 d-none d-md-block">
+          <img
+            class="img-fluid"
+            src="assets/home-settings.svg"
+            alt="Home Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-secondary-subtle p-4" id="about-us">
+      <div
+        class="container bg-white px-md-5 px-4 py-3 rounded d-flex flex-column gap-4"
+      >
+        <div class="row align-items-end gap-2">
+          <div class="col-sm-4 pt-sm-0 pt-4">
+            <a class="fw-bold mb-0 text-primary text-decoration-none" href="https://bytebitestudio.com">ByteBite Studio</a>
+            <h1 class="fs-1">Sobre Nosotros</h1>
+          </div>
+          <div class="col">
+            <p class="mb-0">
+                En ByteBite Studio, desarrollamos soluciones tecnológicas que transforman ideas en herramientas prácticas y efectivas. Como creadores de Hestia, nuestra prioridad es ofrecer una experiencia centrada en tres valores fundamentales
+            </p>
+          </div>
+        </div>
+        <hr class="d-md-none my-4 d-block">
+        <div class="row justify-content-center gap-3 gap-md-5 p-md-5 p-0 pt-2">
+          <div class="col-md-3 d-flex flex-column align-items-center">
+            <i class="bx bx-check-circle fs-1"></i>
+            <h2 class="fs-3">Simple.</h2>
+            <p class="text-center fs-6">
+                Diseñamos interfaces intuitivas que simplifican la administración de propiedades, eliminando la complejidad para que cualquier usuario pueda aprovechar al máximo la aplicación.
+            </p>
+          </div>
+          <div class="col-md-3 d-flex flex-column align-items-center">
+            <i class="bx bx-timer fs-1"></i>
+            <h2 class="fs-3">Eficiente.</h2>
+            <p class="text-center fs-6">
+                Optimizamos cada proceso para que nuestros usuarios ahorren tiempo y recursos, logrando resultados rápidos y confiables.
+            </p>
+          </div>
+          <div class="col-md-3 d-flex flex-column align-items-center">
+            <i class="bx bx-world fs-1"></i>
+            <h2 class="fs-3">Accesible.</h2>
+            <p class="text-center fs-6">
+                Nos aseguramos de que nuestras soluciones estén al alcance de todos, desde pequeños arrendadores hasta grandes administradores, con precios competitivos y tecnología fácil de usar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4 my-3 px-5" id="functions">
+    <h1>Funciones de Hestia</h1>
+        <p>
+            Hestia cuenta con múltiples funciones diseñadas para simplificar la gestión en tu privada. Desde herramientas intuitivas hasta notificaciones inteligentes, la app hace que administrar todo sea más fácil y eficiente, brindándote tranquilidad y control al alcance de tu mano.
+        </p>
+        <hr class="d-md-none my-4 d-block">
+      <div>
+        <div class="row justify-content-center mb-2">
+          <div
+            class="nav flex-column nav-pills p-0 m-0 me-3 col-md-3 col-sm-6 nav-fill mb-2"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="invitations-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#invitations"
+                type="button"
+                role="tab"
+                aria-controls="invitations"
+                aria-selected="true"
+              >
+                Generación de Invitaciones ✏️
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="services-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#services"
+                type="button"
+                role="tab"
+                aria-controls="services"
+                aria-selected="false"
+              >
+                Solicitud de Amenidades 🧹
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="reports-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#reports"
+                type="button"
+                role="tab"
+                aria-controls="reports"
+                aria-selected="false"
+              >
+                Reporte de problemas 🛠️
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="announcements-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#announcements"
+                type="button"
+                role="tab"
+                aria-controls="announcements"
+                aria-selected="false"
+              >
+                Avisos 🏘️
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="account-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#account"
+                type="button"
+                role="tab"
+                aria-controls="account"
+                aria-selected="false"
+              >
+                Estados de Cuenta 💳
+              </button>
+            </li>
+          </div>
+          <div class="tab-content col-md-5 col-sm-5 py-md-5">
+            <div
+              class="tab-pane active"
+              id="invitations"
+              role="tabpanel"
+              aria-labelledby="invitations-tab"
+              tabindex="0"
+            >
+              <h3>Generación de Invitaciones</h1>
+                Con Hestia, generar invitaciones es rápido y sencillo. Crea códigos únicos desde la app para tus visitas, compártelos fácilmente y mantén el acceso a tu privada bajo control, todo en cuestión de segundos.
+              </p>
+            </div>
+            <div
+              class="tab-pane"
+              id="services"
+              role="tabpanel"
+              aria-labelledby="services-tab"
+              tabindex="0"
+            >
+              <h3>Solicitud de Amenidades</h1>
+                Solicitar amenidades nunca fue tan fácil con Hestia. Reserva áreas comunes de tu privada directamente desde la app, con un proceso rápido, organizado y accesible desde cualquier lugar.
+              </p>
+            </div>
+            <div
+              class="tab-pane"
+              id="reports"
+              role="tabpanel"
+              aria-labelledby="reports-tab"
+              tabindex="0"
+            >
+              <h3>Reporte de problemas</h1>
+                Hestia facilita el reporte de problemas en tu privada. Comunica cualquier incidente o solicitud de mantenimiento desde la app, asegurando una gestión rápida y organizada para mantener todo en perfecto estado.
+              </p>
+            </div>
+            <div
+              class="tab-pane"
+              id="announcements"
+              role="tabpanel"
+              aria-labelledby="announcements-tab"
+              tabindex="0"
+            >
+              <h3>Avisos</h1>
+                Con Hestia, los avisos importantes llegan directamente a tu dispositivo. Recibe notificaciones sobre eventos, recordatorios o situaciones urgentes, manteniéndote siempre informado y al tanto de lo que sucede en tu privada.
+              </p>
+            </div>
+            <div
+              class="tab-pane"
+              id="account"
+              role="tabpanel"
+              aria-labelledby="account-tab"
+              tabindex="0"
+            >
+              <h3>Estados de Cuenta</h1>
+                Hestia te permite consultar tus estados de cuenta de forma rápida y clara. Accede a un historial detallado de pagos, facturas y cargos, todo en un solo lugar para una gestión financiera más sencilla y organizada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-primary text-white p-4" id="access">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Proceso Facil de Acceso</h1>
+                    <p>Generar un código de acceso con Hestia es muy sencillo: solo tienes que crear el código, compartirlo con tu invitado y, al llegar, el invitado podrá escanearlo en la entrada para acceder sin problemas. Este proceso rápido y eficiente garantiza un acceso sin complicaciones.</p>
+                </div>
+                <div class="col-md-9">
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-md-6">
+                            <div id="carouselExampleDark" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="assets/generate-qr.png" class="d-block w-50 mx-auto" alt="...">
+                                    <h5 class="text-center">1. Generar</h5>
+                                    <p class="text-center">Genera códigos de acceso únicos fácilmente con Hestia.</p>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="assets/share-qr.png" class="d-block w-50 mx-auto" alt="...">
+                                    <h5 class="text-center">2. Compartir</h5>
+                                    <p class="text-center">Comparte el código de acceso de manera rápida y segura.</p>
+                                </div>
+                              <div class="carousel-item">
+                                  <img src="assets/scan-qr.png" class="d-block w-50 mx-auto" alt="...">
+                                    <h5 class="text-center">3. Escanear</h5>
+                                    <p class="text-center">Escanea el código para un acceso rápido y sencillo.</p>
+                                </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4 my-3">
+        <div class="container text-center" id="admin-panel">
+            <div class="mx-md-5 px-md-5">
+                <h1>Panel de Administracion</h1>
+                <p>El panel de administración de Hestia centraliza todas las tareas importantes de manera sencilla. Desde aquí, puedes gestionar pagos, generar códigos de acceso y controlar las solicitudes de amenidades, todo con un diseño intuitivo que facilita la administración de tu privada de manera eficiente y sin complicaciones.</p>
+            </div>
+            <div class="row d-flex justify-content-center mt-4">
+                <div class="bg-primary rounded p-md-3 p-2 col-md-8">
+                    <img class="img-fluid rounded" src="assets/admin-panel.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4 my-3" id="faq">
+        <div class="px-md-5 mx-md-5">
+
+            <h2>Preguntas Frecuentes</h2>
+            <div class="accordion mt-3" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cómo genero un código de acceso para invitados?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Para generar un código de acceso, simplemente ingresa a la app, selecciona la opción de "Generar código" y comparte el enlace con tu invitado.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Cómo puedo gestionar los pagos de mi propiedad?
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Puedes gestionar los pagos desde el panel de administración, donde podrás ver el historial, realizar cobros y recibir notificaciones de pagos.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Hestia es compatible con dispositivos Android y iOS?
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Sí, Hestia está disponible tanto para dispositivos Android como iOS.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                ¿Cómo puedo ver el historial de pagos de los inquilinos?
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                El historial de pagos se puede consultar fácilmente en el panel de administración, donde verás un resumen de todos los pagos realizados.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                ¿Puedo configurar recordatorios de pago para mis inquilinos?
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Sí, Hestia permite configurar recordatorios automáticos para que tus inquilinos reciban notificaciones antes de la fecha de vencimiento de su pago.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                ¿Cómo hago una reserva de amenidades para la privada?
+            </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Puedes hacer reservas de amenidades directamente desde la app, eligiendo la fecha y hora que más te convenga.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                ¿Puedo agregar varias propiedades a la app?
+            </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Sí, puedes gestionar varias propiedades desde un solo panel de administración, facilitando su control y administración.
+            </div>
+        </div>
+    </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      ¿Puedo personalizar las notificaciones que recibo?
+                    </button>
+                </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                  Sí, Hestia permite personalizar las notificaciones, para que recibas solo las alertas que realmente necesitas.
+                </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                      ¿Cómo puedo reportar un problema o incidente?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Puedes reportar problemas directamente desde la app, donde podrás describir el incidente y recibir una respuesta rápida.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                ¿Hestia ofrece soporte técnico?
+            </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Sí, Hestia ofrece soporte técnico para resolver cualquier duda o inconveniente que puedas tener mientras usas la aplicación.
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+</div>
+
+<footer class="bg-primary text-white text-center text-lg-start py-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col">
+                <h1>Hestia</h1>
+                <p class="text-secondary">Has Privada tu Privada</p>
+            </div>
+            <hr class="my-3 d-block d-md-none">
+            <div class="col-md-6 offset-md-3">
+                <h5 class="mb-4">Contáctanos</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light w-100">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="text-center">
+            <p class="mb-0">© Hestia 2025. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+      
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
